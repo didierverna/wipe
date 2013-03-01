@@ -1118,7 +1118,7 @@ the mode if ARG is omitted or nil.
 
 See also `wipe-style', `wipe-newline' and
 `wipe-display-mappings'."
-  :lighter    " ws"
+  :lighter    " wp"
   :init-value nil
   :global     nil
   :group      'wipe
@@ -1169,7 +1169,7 @@ enable it if ARG is omitted or nil.
 
 See also `wipe-style', `wipe-newline' and
 `wipe-display-mappings'."
-  :lighter    " WS"
+  :lighter    " WP"
   :init-value nil
   :global     t
   :group      'wipe
