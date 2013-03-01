@@ -1,0 +1,3 @@
+EL_FILES := $(filter-out auto-autoloads.el $(PROJECT)-autoloads.el \
+		 custom-defines.el custom-load.el, \
+	       $(wildcard *.el))

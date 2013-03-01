@@ -1,0 +1,53 @@
+                                                               -*- outline -*-
+
+
+		      HOW TO INSTALL THE LIBRARY
+
+
+* Copyright (C) 2011, 2012 Didier Verna
+
+Copying and distribution of this file, with or without modification,
+are permitted in any medium without royalty provided the copyright
+notice and this notice are preserved.
+
+
+* Installation
+
+** Prerequisites
+You must use GNU Make with this standalone distribution.
+
+** Edit Makefile.inc
+This file is located at the top of the distribution. Look at the various
+settings and adjust them as you see fit.
+
+** Build the library
+Type `make' to do that. This step is optional if you plan on installing in one
+of the ways described below (it will be performed implicitely).
+
+** Install the library
+There are two ways to install the library automatically.
+
+- If you're installing for GNU Emacs, you must use `make install'.
+
+- If you're installing for XEmacs, you must use `make install-pkg' to install
+  as an XEmacs package. Note that there is preliminary support for installing
+  as a GNU Emacs package, but it doesn't really work out of the box right now
+  (GNU Emacs doesn't support the notion of user-level packages yet).
+
+** Uninstalling the library
+Depending on the installation type, you can uninstall with either `make
+uninstall' or `make uninstall-pkg'.
+
+** Additional documentation formats
+If the library provides some documentation, it is built as Info files by
+default. You can however build it in other formats by typing `make FORMAT' in
+the doc/ subdirectory. FORMAT is one of `dvi', `ps', `pdf', `html'. The HTML
+version is built in its own .html subdirectory of doc/.
+
+Note that only the Info documentation is automatically installed.
+
+
+	Have fun!
+
+--
+Didier Verna, didier@didierverna.net, http://www.lrde.epita.fr/~didier
